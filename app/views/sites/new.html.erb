@@ -1,0 +1,10 @@
+<div class="bodyform">
+<%= form_for @site do |f| %>
+  <div class="form-group">
+  <%= f.text_field :url, placeholder: "Search a site", autofocus: true, class: "form-control" %>
+  </div>
+  <div class="form-group">
+  <%= f.submit "Search", class: "form-control" %>
+  </div>
+<% end %>
+</div>

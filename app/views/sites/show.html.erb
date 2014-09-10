@@ -1,0 +1,7 @@
+<a href="/"><- Go back</a>
+
+<div class="bodyform">
+<% @site_links.each do |link| %>
+  <li><strong><%= link.http_response %> </strong><a href="<%= link.url %>"><%= link.url %> </a></li>
+<% end %>
+</div>
